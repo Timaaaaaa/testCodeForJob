@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/icon_16"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="81dp"
+            android:src="@drawable/icon_035"/>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/imgLogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="43dp"
+            style="@style/BigTextTheme"
+            android:textSize="36sp"
+            android:textColor="@color/colorWhite"
+            android:text="Қош келдіңіз!"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/text1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="75dp"
+            android:paddingBottom="60dp"
+            android:background="@drawable/skin_image"
+            android:backgroundTint="@color/colorDarkBlue">
+
+            <EditText
+                android:id="@+id/edtPhoneAuth"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/skin_pack_selected"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:inputType="phone"
+                android:textSize="14sp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:hint="Логин"/>
+
+
+            <EditText
+                android:id="@+id/edtPasswordAuth"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                app:layout_constraintTop_toBottomOf="@id/edtPhoneAuth"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_margin="24dp"
+                android:background="@drawable/skin_pack_selected"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:inputType="textPassword"
+                android:textSize="14sp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:hint="Пароль"/>
+
+
+            <CheckBox
+                android:id="@+id/checkAgreement"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/edtPasswordAuth"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="35dp"
+                style="@style/CheckBoxTheme"  />
+
+            <TextView
+                android:id="@+id/txtPolicy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/checkAgreement"
+                app:layout_constraintBottom_toBottomOf="@id/checkAgreement"
+                app:layout_constraintStart_toEndOf="@id/checkAgreement"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="35dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="13sp"/>
+
+
+            <Button
+                android:id="@+id/btnSignInAuth"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                app:layout_constraintTop_toBottomOf="@id/txtPolicy"
+                app:layout_constraintStart_toStartOf="@+id/edtPasswordAuth"
+                app:layout_constraintEnd_toEndOf="@+id/edtPasswordAuth"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/skin_pack"
+                android:backgroundTint="@color/colorGold"
+                android:textSize="16sp"
+                android:textColor="#0C2136"
+                android:text="Кіру"/>
+
+            <TextView
+                android:id="@+id/txtLessonDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/btnSignInAuth"
+                app:layout_constraintStart_toStartOf="@id/btnSignInAuth"
+                app:layout_constraintEnd_toEndOf="@id/btnSignInAuth"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="24dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorGrey"
+                android:text="Логин және пароль “Ақылы сабақ” бөліміндегі сабақты сатып алғанда беріледі" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutSocNet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtLessonDescription">
+
+                <ImageView
+                    android:id="@+id/imgtelegaa"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/imginstaa"
+                    android:layout_marginEnd="40dp"
+                    android:src="@drawable/ic_telegram"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+                <ImageView
+                    android:id="@+id/imgyoua"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/imginstaa"
+                    android:layout_marginStart="40dp"
+                    android:src="@drawable/ic_youtube"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+
+                <ImageView
+                    android:id="@+id/imginstaa"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:src="@drawable/ic_instagram"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

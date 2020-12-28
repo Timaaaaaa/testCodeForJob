@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".main.presentation.subjects.main.LessonsMainFragment"
+    android:background="@color/colorDefBackground"
+    android:backgroundTint="@color/colorDarkBlue">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="24dp">
+
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header_toolbar"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constAudio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/header"
+            android:layout_margin="24dp"
+            android:padding="10dp"
+            android:background="@drawable/skin_audio"
+            android:backgroundTint="@color/colorDarkBlueForItem"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/imgDefault"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/icon_7"
+                />
+            
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="18dp"
+                app:layout_constraintTop_toTopOf="@id/imgDefault"
+                app:layout_constraintStart_toStartOf="@id/imgDefault"
+                app:layout_constraintEnd_toEndOf="@id/imgDefault"
+                app:layout_constraintBottom_toBottomOf="@id/imgDefault"
+                android:src="@drawable/icon_26"/>
+
+            <TextView
+                android:id="@+id/txtAudioTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/imgDefault"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/colorWhite"
+                android:lines="1"/>
+
+            <TextView
+                android:id="@+id/txtAudioAuthor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/imgDefault"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtAudioTitle"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:textColor="#ffffff"
+                android:lines="1"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/txtLessonTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/constAudio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        style="@style/BigTextTheme"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        android:text="" />
+
+        <WebView
+            android:id="@+id/webViewHomeWork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/txtLessonTitle"
+            app:layout_constraintStart_toStartOf="@id/txtLessonTitle"
+            app:layout_constraintEnd_toEndOf="@id/txtLessonTitle"
+            android:background="@drawable/skin_question"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btnHomeLesson"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/webViewHomeWork"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="30dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:background="@drawable/skin_pack"
+            android:backgroundTint="@color/colorGold"
+            android:textSize="16sp"
+            android:textColor="#0C2136"
+            android:text="Үй тапсырмасы"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

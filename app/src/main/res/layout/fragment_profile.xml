@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDefBackground"
+    android:backgroundTint="@color/colorDarkBlue"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constProfileData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/icon_15"
+            android:paddingBottom="24dp">
+
+            <ImageView
+                android:id="@+id/imgLetter"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="44dp"
+                android:src="@drawable/icon_19"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/txtUserNameLetter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/imgLetter"
+                app:layout_constraintStart_toStartOf="@id/imgLetter"
+                app:layout_constraintEnd_toEndOf="@+id/imgLetter"
+                app:layout_constraintBottom_toBottomOf="@id/imgLetter"
+                android:gravity="center"
+                android:textColor="@color/colorDarkBlue"
+                android:textSize="36sp"
+                android:fontFamily="@font/medium"
+                android:text="TT"
+                />
+
+            <TextView
+                android:id="@+id/txtUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/imgLetter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                style="@style/BigTextTheme"
+                android:textSize="16sp"
+                android:fontFamily="@font/medium"
+                android:textColor="@color/colorWhite"
+                android:text="Толегенов Темирлан"/>
+
+            <TextView
+                android:id="@+id/txtUserPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txtUserName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="6dp"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                android:alpha="0.6"
+                android:text="+7 776 536 28 89" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btnMyLessons"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/constProfileData"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="60dp"
+            android:drawableStart="@drawable/icon_2"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp"
+            android:background="@drawable/skin_pack">
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="28dp"
+                android:src="@drawable/icon_2"/>
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/img2"
+                app:layout_constraintEnd_toStartOf="@id/img1"
+                android:layout_marginStart="28dp"
+                android:textSize="16sp"
+                android:textColor="@color/colorWhite"
+                android:text="Менің сабақтарым"
+                />
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="24dp"
+                android:src="@drawable/icon_21"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btnConnection"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/btnMyLessons"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="40dp"
+            android:drawableStart="@drawable/icon_2"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp"
+            android:background="@drawable/skin_pack">
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="28dp"
+                android:src="@drawable/icon_25"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/img3"
+                app:layout_constraintEnd_toStartOf="@id/img4"
+                android:layout_marginStart="28dp"
+                android:textSize="16sp"
+                android:textColor="@color/colorWhite"
+                android:text="Кері байланыс"/>
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="24dp"
+                android:src="@drawable/icon_21"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/txtLessonDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/btnConnection"
+            app:layout_constraintStart_toStartOf="@id/btnConnection"
+            app:layout_constraintEnd_toEndOf="@id/btnConnection"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="24dp"
+            android:paddingBottom="15dp"
+            android:textSize="12sp"
+            android:textColor="@color/colorGrey"
+            android:gravity="center"
+            android:text="Айнұр Тұрсынбаеваның әлеуметтік желідегі парақшалары" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutSocNet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtLessonDescription">
+
+            <ImageView
+                android:id="@+id/imgtelega"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/imginsta"
+                android:layout_marginEnd="40dp"
+                android:src="@drawable/ic_telegram"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+            <ImageView
+                android:id="@+id/imgyou"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imginsta"
+                android:layout_marginStart="40dp"
+                android:src="@drawable/ic_youtube"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+
+
+            <ImageView
+                android:id="@+id/imginsta"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/ic_instagram"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/btnBuyLesson"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/layoutSocNet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:background="@drawable/skin_question"
+            android:backgroundTint="#EB5757"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:text="Шығу"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

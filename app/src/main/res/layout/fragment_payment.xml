@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorDefBackground"
+    android:backgroundTint="@color/colorDarkBlue"
+    android:onClick="onClickBk">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="15dp">
+    <include
+        android:id="@+id/header"
+        layout="@layout/header_toolbar"/>
+
+
+
+    <RadioGroup
+        android:id="@+id/checkboxPayType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioBtnCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:padding="13dp"
+            android:background="@drawable/skin_pack"
+            android:textColor="@color/colorWhite"
+            android:text="Онлайн төлеу(PayBox)"
+            android:visibility="gone"/>
+
+        <RadioButton
+            android:id="@+id/radioBtnCash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:padding="13dp"
+            android:background="@drawable/skin_pack"
+            android:textColor="@color/colorWhite"
+            android:text="Kaspi Gold"
+            />
+
+    </RadioGroup>
+
+        <EditText
+            android:id="@+id/edtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/checkboxPayType"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="53dp"
+            android:padding="18dp"
+            android:background="@drawable/skin_pack"
+            android:hint="Есиминиз"
+            android:textColorHint="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/medium"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/edtUserEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/edtUserName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="15dp"
+            android:padding="18dp"
+            android:background="@drawable/skin_pack"
+            android:inputType="textEmailAddress"
+            android:hint="Aidyn@mail.ru"
+            android:textColorHint="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/medium"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/edtUserPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/edtUserEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="15dp"
+            android:padding="18dp"
+            android:background="@drawable/skin_pack"
+            android:hint="+7"
+            android:textColorHint="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/medium"
+            android:visibility="gone"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/advise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edtUserPhone"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="24dp"
+        android:paddingBottom="16dp"
+        android:background="@drawable/skin_const_second"
+        android:backgroundTint="@color/colorDarkBlueForItem"
+        android:visibility="visible"
+        >
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Жадынама!"
+            android:textSize="13sp"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/text2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/colorWhite"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:text=""
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/text3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="13sp"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/text4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="13sp"
+            android:textColor="@color/colorWhite"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnBuyLessonPayment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/advise"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="30dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@drawable/skin_pack"
+        android:backgroundTint="@color/colorGold"
+        android:textSize="16sp"
+        android:textColor="#0C2136"
+        android:text="@string/dialog_lesson_buy_action"/>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

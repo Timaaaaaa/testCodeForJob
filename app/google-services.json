@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "898203555535",
+    "firebase_url": "https://aidynnury-11ccb.firebaseio.com",
+    "project_id": "aidynnury-11ccb",
+    "storage_bucket": "aidynnury-11ccb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898203555535:android:d618e6e313c09e313649ba",
+        "android_client_info": {
+          "package_name": "com.thousand.aidynnury"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898203555535-1g4466bi129u0aiedd186067gu8i4l12.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thousand.aidynnury",
+            "certificate_hash": "4671e97be4d42257f01314e199cad6595685d631"
+          }
+        },
+        {
+          "client_id": "898203555535-p3jdgakqf8mjnjhgivgk9ik7v8n15j2d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9P0G-WnWGgrRArneCfr5vXJcSzwRiL3c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "898203555535-p3jdgakqf8mjnjhgivgk9ik7v8n15j2d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "898203555535-cc2hf7ma17irn9sddkt3dmnduaf4vle6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "apple.eldor.AidynNury"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

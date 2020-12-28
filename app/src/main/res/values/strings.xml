@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Aidyn nury</string>
+    <string name="title_subjects">Сабақтар</string>
+    <string name="title_info">Ақпарат</string>
+    <string name="title_FAQ">Сұрақ-жауап</string>
+    <string name="title_profile">Профиль</string>
+        <string name="label_subjects_lesson">%d - сабақ</string>
+    <string name="label_subjects_name_example">Түпсана сабағы</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label_subjects_search_hint">Сабақтарды іздеу</string>
+    <string name="label_subjects_title">Сабақтар</string>
+    <string name="dialog_lesson_title">Түпсана сабағы</string>
+    <string name="dialog_lesson_info">Курс бойынша ақпарат</string>
+    <string name="dialog_lesson_buy_action">Сатып алу</string>
+    <string name="dialog_lesson_price">%d ₸</string>
+    <string name="profile_button">Менің сабақтарым</string>
+    <string name="format_phone_number">+7 ([000]) [000]-[00]-[00]</string>
+    <string name="label_payment_deatils">Жадынама! Бұл сабақты сатып алу үшін %d теңгені Kaspi Gold арқылы %s нөміріне төлеп, чекті %s нөміріне жіберіңіз, сол кезде біздің менеджер сабақты көруге сізге логин пароль беретін болады.</string>
+    <string name="notifications_admin" translatable="false">Уведомления для 8 версий</string>
+    <string name="notifications_admin_channel_name" translatable="false">channel</string>
+    <string name="label_audio_count">%d аудио</string>
+</resources>
