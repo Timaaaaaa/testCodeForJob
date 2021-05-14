@@ -18,8 +18,8 @@ val networkModule = module {
 
 
 object ServiceProperties {
-    const val SERVER_URL = "http://194.4.58.92/"
-    const val SERVER_URL_IMAGE = "http://194.4.58.92/"
+    const val SERVER_URL = ""
+    const val SERVER_URL_IMAGE = ""
     const val AUTH_HEADER = ""
 }
 
